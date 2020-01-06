@@ -8,12 +8,13 @@
     </div>
     <h1> WASUPP </h1>
     <script>
-    window.addEventListener("message", receiveMessage, false);
-
     function receiveMessage(event) {
        console.log(event.data);
        document.getElementById("shoppingBasket").innerText = event.data;
     }
+        
+    window.addEventListener("message", receiveMessage, false);
+        
     </script>
 </body>
 </html>
