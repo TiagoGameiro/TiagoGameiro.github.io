@@ -12,10 +12,10 @@
     function receiveMessage(event) {
         console.log('you there mate?');
         if (event.data.objectId === "your-object-id") {
-            // Handle the message
             console.log(event.data.payload);
+            document.getElementById("shoppingBasket").innerText = event.data.payload;
+
         }
-       document.getElementById("shoppingBasket").innerText = event.data.payload;
     }        
     window.addEventListener("message", receiveMessage, false);
         
