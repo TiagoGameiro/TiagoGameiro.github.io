@@ -11,7 +11,7 @@
     console.log('YOOOO3');
     function receiveMessage(event) {
         console.log('you there mate?');
-        if (event.data.objectId === "your-object-id") {
+        if (event.data.objectId === "phoneNumberMessage") {
             console.log(event.data.payload);
             document.getElementById("shoppingBasket").innerText = event.data.payload;
 
